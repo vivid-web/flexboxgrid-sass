@@ -1,0 +1,28 @@
+{
+  "name": "flexbox-grid-sass",
+  "version": "0.1.0",
+  "description": "A simple flexbox CSS grid system",
+  "main": "dist/flexbox-grid.min.css",
+  "authors": [
+    "Peter van Meijgaard <petervanmeijgaard@hotmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "grid",
+    "flexbox",
+    "responsive",
+    "framework",
+    "stylus",
+    "sass",
+    "less",
+    "front-end"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

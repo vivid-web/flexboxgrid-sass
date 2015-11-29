@@ -1,0 +1,31 @@
+@mixin make-column($breakpoint, $columns ) {
+  .Grid__col--#{$breakpoint} {
+    @for $number from 1 through $columns {
+      &-#{$number} {
+        width: (100 / 12 * $number)#{'%'};
+        flex: none;
+      }
+    }
+  }
+}
+
+@mixin make-gutter() {
+  .Grid--gutters {
+    .Grid__col {
+      padding: 1rem 0 0 1rem;
+    }
+  }
+}
+
+@mixin make-grid($breakpoints, $columns) {
+  @each $breakpoint, $width in $breakpoints {
+    @if ($width == 0) {
+      @include make-column($breakpoint, $columns);
+    } @else {
+      @media (min-width: $width) {
+        @include make-gutter();
+        @include make-column($breakpoint, $columns);
+      }
+    }
+  }
+}
