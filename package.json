@@ -5,7 +5,7 @@
   "main": "dist/flexbox-grid.min.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PetervMeijgaard/flexbox-grid-sass.git"
+    "url": "https://github.com/vivid-web/flexbox-grid-sass.git"
   },
   "author": "Peter van Meijgaard <petervanmeijgaard@hotmail.com>",
   "license": "MIT",
