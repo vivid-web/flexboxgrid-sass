@@ -1,0 +1,18 @@
+.code{
+  font-family : Consolas, monospace;
+  padding: 0.5rem;
+  word-wrap: break-word;
+  white-space: pre;
+
+  @include variant(light){
+    background-color: $opacity_black;
+    border: 1px solid $opacity_black;
+    color: $primary_black;
+  }
+
+  @include variant(dark){
+    background-color: $opacity_white;
+    border: 1px solid $opacity_white;
+    color: $primary_white;
+  }
+}

@@ -1,0 +1,28 @@
+.button {
+  @include transition(100ms);
+  display: block;
+  padding: 1rem 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+
+  &:hover {
+    @include transition(100ms);
+  }
+
+  @include variant(primary) {
+    background-color: $primary;
+    color: $primary_white;
+    border: 1px solid $opacity_black;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $primary_white;
+      color: $primary;
+      border-color: $primary;
+    }
+  }
+
+  @include variant(block) {
+    width: 100%;
+  }
+}

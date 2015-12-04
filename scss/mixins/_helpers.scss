@@ -1,0 +1,50 @@
+// Helper for the grid align top
+@mixin make-grid-top-helper($breakpoint) {
+  .grid__row--#{$breakpoint}-top {
+    align-items: flex-start;
+  }
+}
+
+// Helper for the grid align center
+@mixin make-grid-center-helper($breakpoint) {
+  .grid__row--#{$breakpoint}-center {
+    align-items: center;
+  }
+}
+
+// Helper for the grid align bottom
+@mixin make-grid-bottom-helper($breakpoint) {
+  .grid__row--#{$breakpoint}-bottom {
+    align-items: flex-end;
+  }
+}
+
+// Helper for the sorting the first item
+@mixin make-first-col-helper($breakpoint) {
+  .grid__col--#{$breakpoint}-first {
+    order: -1;
+  }
+}
+
+// Helper for the sorting the first item
+@mixin make-last-col-helper($breakpoint) {
+  .grid__col--#{$breakpoint}-last {
+    order: 1;
+  }
+}
+
+// Helper for the reversing the items
+@mixin make-reverse-helper($breakpoint) {
+  .grid__row--#{$breakpoint}-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+@mixin make-helpers($breakpoint) {
+  @include make-grid-top-helper($breakpoint);
+  @include make-grid-center-helper($breakpoint);
+  @include make-grid-bottom-helper($breakpoint);
+  @include make-first-col-helper($breakpoint);
+  @include make-last-col-helper($breakpoint);
+  @include make-reverse-helper($breakpoint);
+}

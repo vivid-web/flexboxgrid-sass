@@ -1,5 +1,9 @@
 @import "variables";
+
+// Mixins
+@import "mixins/helpers";
 @import "mixins/grid-framework";
-@import "grid-fix";
-@import "grid";
-@import "helpers";
+@import "mixins/bem";
+
+// Components
+@import "components/grid";

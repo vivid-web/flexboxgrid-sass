@@ -4,7 +4,7 @@
   "description": "A simple flexbox CSS grid system",
   "main": "dist/flexbox-grid.min.css",
   "authors": [
-    "Peter van Meijgaard <petervanmeijgaard@hotmail.com>"
+    "Vivid Websolutions <info@vivid-websolutions.nl>"
   ],
   "license": "MIT",
   "keywords": [

@@ -1,0 +1,13 @@
+$primary : #fa0;
+
+$primary_light : lighten($primary, 10%);
+$primary_dark : darken($primary, 10%);
+
+$white : #fff;
+$black : #000;
+
+$primary_white : lighten($primary, 47.5%);
+$primary_black : darken($primary, 47.5%);
+
+$opacity_white : rgba(255, 255, 255, 0.2);
+$opacity_black : rgba(0, 0, 0, 0.2);

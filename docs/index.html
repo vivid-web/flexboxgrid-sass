@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="dist/stylesheet.min.css">
+  </head>
+  <body>
+    <div class="jumbotron jumbotron--light">
+      <div class="grid grid--fixed">
+        <div class="grid__row">
+          <div class="grid__col grid__col-md-12">
+            <div class="jumbotron__header jumbotron--light__header">
+              <h1 class="jumbotron__title jumbotron--light__title">Flexbox Grid</h1><span class="jumbotron__underline jumbotron--light__underline"></span><small class="jumbotron__subtitle jumbotron--light__subtitle">A flex-based CSS grid system according to the BEM standard</small>
+            </div>
+            <div class="jumbotron__body jumbotron--light__body">
+              <div class="grid grid--flex-cols">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--md">
+                    <div class="card card--light">
+                      <div class="card--light__header card__header">
+                        <h3 class="card__title card--light__title">Using SASS</h3>
+                      </div>
+                      <div class="card__body card--light__body">
+                        <ul class="card__list card--light__list">
+                          <li class="card__list-item card--light__list-item">
+                            <h4 class="card__list-item-title card--light__list-item-title">With Bower</h4>
+                            <div class="card__list-item-content card--light__list-item-content">
+                              <pre class="code code--light">bower install flexbox-grid-sass</pre>
+                            </div>
+                          </li>
+                          <li class="card__list-item card--light__list-item">
+                            <h4 class="card__list-item-title card--light__list-item-title">With npm</h4>
+                            <div class="card__list-item-content card--light__list-item-content">
+                              <pre class="code code--light">npm install flexbox-grid-sass</pre>
+                            </div>
+                          </li>
+                          <li class="card__list-item card--light__list-item">
+                            <div class="card__list-item-content card--light__list-item-content"><a href="http://github.com/vivid-web/flexbox-grid-sass" target="_blank" class="button button--primary button--block">
+                                Github
+                                </a></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--md">
+                    <div class="card card--light">
+                      <div class="card--light__header card__header">
+                        <h3 class="card__title card--light__title">Using LESS</h3>
+                      </div>
+                      <div class="card__body card--light__body">
+                        <ul class="card__list card--light__list">
+                          <li class="card__list-item card--light__list-item">
+                            <h4 class="card__list-item-title card--light__list-item-title">With Bower</h4>
+                            <div class="card__list-item-content card--light__list-item-content">
+                              <pre class="code code--light">bower install flexbox-grid-less</pre>
+                            </div>
+                          </li>
+                          <li class="card__list-item card--light__list-item">
+                            <h4 class="card__list-item-title card--light__list-item-title">With npm</h4>
+                            <div class="card__list-item-content card--light__list-item-content">
+                              <pre class="code code--light">npm install flexbox-grid-less</pre>
+                            </div>
+                          </li>
+                          <li class="card__list-item card--light__list-item">
+                            <div class="card__list-item-content card--light__list-item-content"><a href="http://github.com/vivid-web/flexbox-grid-less" target="_blank" class="button button--primary button--block">Github</a></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--md">
+                    <div class="card card--light">
+                      <div class="card--light__header card__header">
+                        <h3 class="card__title card--light__title">Using Stylus</h3>
+                      </div>
+                      <div class="card__body card--light__body">
+                        <ul class="card__list card--light__list">
+                          <li class="card__list-item card--light__list-item">
+                            <h4 class="card__list-item-title card--light__list-item-title">With Bower</h4>
+                            <div class="card__list-item-content card--light__list-item-content">
+                              <pre class="code code--light">bower install flexbox-grid-stylus</pre>
+                            </div>
+                          </li>
+                          <li class="card__list-item card--light__list-item">
+                            <h4 class="card__list-item-title card--light__list-item-title">With npm</h4>
+                            <div class="card__list-item-content card--light__list-item-content">
+                              <pre class="code code--light">npm install flexbox-grid-stylus</pre>
+                            </div>
+                          </li>
+                          <li class="card__list-item card--light__list-item">
+                            <div class="card__list-item-content card--light__list-item-content"><a href="http://github.com/vivid-web/flexbox-grid-stylus" target="_blank" class="button button--primary button--block">Github</a></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section section--dark">
+      <div class="grid grid--fixed">
+        <div class="grid__row">
+          <div class="grid__col grid__col-md-12">
+            <div class="section__header section--dark__header">
+              <h2 class="section__title section--dark__title">Individual sizing</h2><span class="section__underline section--dark__underline"></span><small class="section__subtitle section--dark__subtitle">It is possible to size the columns individually</small>
+            </div>
+            <div class="section__body section--dark__body">
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-12">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-11">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-1">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-10">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-9">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-3">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-8">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-4">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-7">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-5">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-6">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-6">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-5">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-7">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-4">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-8">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-3">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-9">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-10">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-1">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-11">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-12">
+                    <div class="block block--dark">
+                      <div class="block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--light">
+      <div class="grid grid--fixed">
+        <div class="grid__row">
+          <div class="grid__col grid__col-md-12">
+            <div class="section__header section--light__header">
+              <h2 class="section__title section--light__title">Grid in a grid</h2><span class="section__underline section--light__underline"></span><small class="section__subtitle section--light__subtitle">Grid components are infinitely nestable inside of other grid components</small>
+            </div>
+            <div class="section__body">
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-10">
+                    <div class="block block--light">
+                      <div class="block__content block--light__content">
+                        <div class="grid">
+                          <div class="grid__row">
+                            <div class="grid__col grid__col--sm-2">
+                              <div class="block block--light">
+                                <div class="block__content block--light__content"></div>
+                              </div>
+                            </div>
+                            <div class="grid__col grid__col--sm-10">
+                              <div class="block block--light">
+                                <div class="block__content block--light__content">
+                                  <div class="grid">
+                                    <div class="grid__row">
+                                      <div class="grid__col grid__col--sm-2">
+                                        <div class="block block--light">
+                                          <div class="block__content block--light__content"></div>
+                                        </div>
+                                      </div>
+                                      <div class="grid__col grid__col--sm-10">
+                                        <div class="block block--light">
+                                          <div class="block__content block--light__content"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--light">
+                      <div class="block__content block--light__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--dark">
+      <div class="grid grid--fixed">
+        <div class="grid__row">
+          <div class="grid__col grid__col--md-12">
+            <div class="section__header section--dark__header">
+              <h2 class="section__title section--dark__title">Offset</h2><span class="section__underline section--dark__underline"></span><small class="section__subtitle section--dark__subtitle">It is possible to add offset to the columns</small>
+            </div>
+            <div class="section__body section--dark__body">
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-1 grid__col--sm-offset-11">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-2 grid__col--sm-offset-10">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-3 grid__col--sm-offset-9">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-4 grid__col--sm-offset-8">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-5 grid__col--sm-offset-7">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-6 grid__col--sm-offset-6">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-7 grid__col--sm-offset-5">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-8 grid__col--sm-offset-4">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-9 grid__col--sm-offset-3">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-10 grid__col--sm-offset-2">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-11 grid__col--sm-offset-1">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--light">
+      <div class="grid grid--fixed">
+        <div class="grid__row">
+          <div class="grid__col grid__col-md-12">
+            <div class="section__header section--light__header">
+              <h2 class="section__title section--light__title">Responsive</h2><span class="section__underline section--light__underline"></span><small class="section__subtitle section--light__subtitle">The content can be displayed on multiple devices</small>
+            </div>
+            <div class="section__body section--light__body">
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--xs-8">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--xs-4">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--xs-2 grid__col--md-4 grid__col--lg-9 grid__col--xl-10">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--xs-10 grid__col--md-8 grid__col--lg-3 grid__col--xl-2">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--dark">
+      <div class="grid grid--fixed">
+        <div class="grid__row">
+          <div class="grid__col grid__col-md-12">
+            <div class="section__header section--dark__header">
+              <h2 class="section__title section--dark__title">Flexible columns</h2><span class="section__underline section--dark__underline"></span><small class="section__subtitle section--dark__subtitle">It is possible to make the columns flexible</small>
+            </div>
+            <div class="section__body section--dark__body">
+              <div class="grid grid--fixed grid--flex-cols">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-4">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Ea eligendi illo impedit placeat provident quod ut.
+                          Atque distinctio illo quisquam.
+                          Ab cupiditate distinctio, doloremque itaque laudantium maiores
+                          quibusdam reiciendis veritatis.
+                        </p>
+                        <p>
+                          A ad aliquid asperiores aut culpa dicta eaque expedita hic ipsa
+                          ipsam libero maiores minima nisi nobis perferendis quasi quis
+                          repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
+                          voluptatem voluptatum?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-3">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Ea eligendi illo impedit placeat provident quod ut.
+                          Atque distinctio illo quisquam.
+                          Ab cupiditate distinctio, doloremque itaque laudantium maiores
+                          quibusdam reiciendis veritatis.
+                        </p>
+                        <p>
+                          A ad aliquid asperiores aut culpa dicta eaque expedita hic ipsa
+                          ipsam libero maiores minima nisi nobis perferendis quasi quis
+                          repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
+                          voluptatem voluptatum?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-5">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Ea eligendi illo impedit placeat provident quod ut.
+                          Atque distinctio illo quisquam.
+                          Ab cupiditate distinctio, doloremque itaque laudantium maiores
+                          quibusdam reiciendis veritatis.
+                        </p>
+                        <p>
+                          A ad aliquid asperiores aut culpa dicta eaque expedita hic ipsa
+                          ipsam libero maiores minima nisi nobis perferendis quasi quis
+                          repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
+                          voluptatem voluptatum?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--light">
+      <div class="grid grid--fixed">
+        <div class="grid__row">
+          <div class="grid__col grid__col--md-12">
+            <div class="section__header section--light__header">
+              <h2 class="section__title section--light__title">Top alignment</h2><span class="section__underline section--light__underline"></span><small class="section__subtitle section--light__subtitle">It is possible to align the columns at the top</small>
+            </div>
+            <div class="section__body section--light__body">
+              <div class="grid grid--fixed">
+                <div class="grid__row grid__row--sm-top">
+                  <div class="grid__col grid__col--sm-4">
+                    <div class="block block--light">
+                      <div class="block__content block--light__content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Ea eligendi illo impedit placeat provident quod ut.
+                          Atque distinctio illo quisquam.
+                          Ab cupiditate distinctio, doloremque itaque laudantium maiores
+                          quibusdam reiciendis veritatis.
+                        </p>
+                        <p>
+                          A ad aliquid asperiores aut culpa dicta eaque expedita hic ipsa
+                          ipsam libero maiores minima nisi nobis perferendis quasi quis
+                          repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
+                          voluptatem voluptatum?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-3">
+                    <div class="block block--light">
+                      <div class="block__content block--light__content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Ea eligendi illo impedit placeat provident quod ut.
+                          Atque distinctio illo quisquam.
+                          Ab cupiditate distinctio, doloremque itaque laudantium maiores
+                          quibusdam reiciendis veritatis.
+                        </p>
+                        <p>
+                          A ad aliquid asperiores aut culpa dicta eaque expedita hic ipsa
+                          ipsam libero maiores minima nisi nobis perferendis quasi quis
+                          repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
+                          voluptatem voluptatum?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-5">
+                    <div class="block block--light">
+                      <div class="block__content block--light__content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Ea eligendi illo impedit placeat provident quod ut.
+                          Atque distinctio illo quisquam.
+                          Ab cupiditate distinctio, doloremque itaque laudantium maiores
+                          quibusdam reiciendis veritatis.
+                        </p>
+                        <p>
+                          A ad aliquid asperiores aut culpa dicta eaque expedita hic ipsa
+                          ipsam libero maiores minima nisi nobis perferendis quasi quis
+                          repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
+                          voluptatem voluptatum?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--dark">
+      <div class="grid grid--fixed">
+        <div class="grid__row">
+          <div class="grid__col grid__col--md-12">
+            <div class="section__header section--dark__header">
+              <h2 class="section__title section--dark__title">Center alignment</h2><span class="section__underline section--dark__underline"></span><small class="section__subtitle section--dark__subtitle">It is possible to align the columns at the center</small>
+            </div>
+            <div class="section__body section--dark__body">
+              <div class="grid grid--fixed">
+                <div class="grid__row grid__row--sm-center">
+                  <div class="grid__col grid__col--sm-4">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Ea eligendi illo impedit placeat provident quod ut.
+                          Atque distinctio illo quisquam.
+                          Ab cupiditate distinctio, doloremque itaque laudantium maiores
+                          quibusdam reiciendis veritatis.
+                        </p>
+                        <p>
+                          A ad aliquid asperiores aut culpa dicta eaque expedita hic ipsa
+                          ipsam libero maiores minima nisi nobis perferendis quasi quis
+                          repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
+                          voluptatem voluptatum?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-3">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Ea eligendi illo impedit placeat provident quod ut.
+                          Atque distinctio illo quisquam.
+                          Ab cupiditate distinctio, doloremque itaque laudantium maiores
+                          quibusdam reiciendis veritatis.
+                        </p>
+                        <p>
+                          A ad aliquid asperiores aut culpa dicta eaque expedita hic ipsa
+                          ipsam libero maiores minima nisi nobis perferendis quasi quis
+                          repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
+                          voluptatem voluptatum?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-5">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Ea eligendi illo impedit placeat provident quod ut.
+                          Atque distinctio illo quisquam.
+                          Ab cupiditate distinctio, doloremque itaque laudantium maiores
+                          quibusdam reiciendis veritatis.
+                        </p>
+                        <p>
+                          A ad aliquid asperiores aut culpa dicta eaque expedita hic ipsa
+                          ipsam libero maiores minima nisi nobis perferendis quasi quis
+                          repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
+                          voluptatem voluptatum?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--light">
+      <div class="grid grid--fixed">
+        <div class="grid__row">
+          <div class="grid__col grid__col--md-12">
+            <div class="section__header section--light__header">
+              <h2 class="section__title section--light__title">Bottom alignment</h2><span class="section__underline section--light__underline"></span><small class="section__subtitle section--light__subtitle">It is possible to align the columns at the bottom</small>
+            </div>
+            <div class="section__body section--light__body">
+              <div class="grid grid--fixed">
+                <div class="grid__row grid__row--sm-bottom">
+                  <div class="grid__col grid__col--sm-4">
+                    <div class="block block--light">
+                      <div class="block__content block--light__content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Ea eligendi illo impedit placeat provident quod ut.
+                          Atque distinctio illo quisquam.
+                          Ab cupiditate distinctio, doloremque itaque laudantium maiores
+                          quibusdam reiciendis veritatis.
+                        </p>
+                        <p>
+                          A ad aliquid asperiores aut culpa dicta eaque expedita hic ipsa
+                          ipsam libero maiores minima nisi nobis perferendis quasi quis
+                          repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
+                          voluptatem voluptatum?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-3">
+                    <div class="block block--light">
+                      <div class="block__content block--light__content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Ea eligendi illo impedit placeat provident quod ut.
+                          Atque distinctio illo quisquam.
+                          Ab cupiditate distinctio, doloremque itaque laudantium maiores
+                          quibusdam reiciendis veritatis.
+                        </p>
+                        <p>
+                          A ad aliquid asperiores aut culpa dicta eaque expedita hic ipsa
+                          ipsam libero maiores minima nisi nobis perferendis quasi quis
+                          repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
+                          voluptatem voluptatum?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-5">
+                    <div class="block block--light">
+                      <div class="block__content block--light__content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Ea eligendi illo impedit placeat provident quod ut.
+                          Atque distinctio illo quisquam.
+                          Ab cupiditate distinctio, doloremque itaque laudantium maiores
+                          quibusdam reiciendis veritatis.
+                        </p>
+                        <p>
+                          A ad aliquid asperiores aut culpa dicta eaque expedita hic ipsa
+                          ipsam libero maiores minima nisi nobis perferendis quasi quis
+                          repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
+                          voluptatem voluptatum?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--dark">
+      <div class="grid grid--fixed">
+        <div class="grid__row">
+          <div class="grid__col grid__col-md-12">
+            <div class="section__header section--dark__header">
+              <h2 class="section__title section--dark__title">Send column to start</h2><span class="section__underline section--dark__underline"></span><small class="section__subtitle section--dark__subtitle">It is possible to send a column to the start</small>
+            </div>
+            <div class="section__body section--dark__body">
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content block__content--center">1</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content block__content--center">2</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content block__content--center">3</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content block__content--center">4</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content block__content--center">5</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2 grid__col--sm-first">
+                    <div class="block block--dark-highlight">
+                      <div class="block__content block--dark-highlight__content block__content--center">6</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--light">
+      <div class="grid grid--fixed">
+        <div class="grid__row">
+          <div class="grid__col grid__col-md-12">
+            <div class="section__header section--light__header">
+              <h2 class="section__title section--light__title">Send column to end</h2><span class="section__underline section--light__underline"></span><small class="section__subtitle section--light__subtitle">It is possible to send a column to the end</small>
+            </div>
+            <div class="section__body section--light__body">
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm-2 grid__col--sm-last">
+                    <div class="block block--light-highlight">
+                      <div class="block__content block--light-highlight__content block__content--center">1</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--light">
+                      <div class="block__content block--light__content block__content--center">2</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--light">
+                      <div class="block__content block--light__content block__content--center">3</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--light">
+                      <div class="block__content block--light__content block__content--center">4</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--light">
+                      <div class="block__content block--light__content block__content--center">5</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--light">
+                      <div class="block__content block--light__content block__content--center">6</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--dark">
+      <div class="grid grid--fixed">
+        <div class="grid__row">
+          <div class="grid__col grid__col-md-12">
+            <div class="section__header section--dark__header">
+              <h2 class="section__title section--dark__title">Reversing the columns</h2><span class="section__underline section--dark__underline"></span><small class="section__subtitle section--dark__subtitle">It is possible to reverse the columns</small>
+            </div>
+            <div class="section__body section--dark__body">
+              <div class="grid grid--fixed">
+                <div class="grid__row grid__row--sm-reverse">
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content block__content--center">1</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content block__content--center">2</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content block__content--center">3</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content block__content--center">4</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content block__content--center">5</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-2">
+                    <div class="block block--dark">
+                      <div class="block__content block--dark__content block__content--center">6</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--light">
+      <div class="grid grid--fixed">
+        <div class="grid__row">
+          <div class="grid__col grid__col-md-12">
+            <div class="section__header section--light__header">
+              <h2 class="section__title section--light__title">Auto sizing</h2><span class="section__underline section--light__underline"></span><small class="section__subtitle section--light__subtitle">
+                According how many items there are displayed,
+                flexbox will automatically compute the desired width</small>
+            </div>
+            <div class="section__body section--light__body">
+              <div class="grid grid--fixed">
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__row">
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm">
+                    <div class="block block--light">
+                      <div class="block__content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--dark">
+      <div class="grid grid--fixed">
+        <div class="grid__row">
+          <div class="grid__col grid__col-md-12">
+            <div class="section__header section--dark__header">
+              <h2 class="section__title section--dark__title">No gutters</h2><span class="section__underline section--dark__underline"></span><small class="section__subtitle section--dark__subtitle">The content can be displayed without the gutters</small>
+            </div>
+            <div class="section__body section--dark__body">
+              <div class="grid grid--fixed">
+                <div class="grid__row grid__row--no-gutters">
+                  <div class="grid__col grid__col--sm-5 grid__col--no-gutters">
+                    <div class="block block--dark">
+                      <div class="block--dark__content block__content--center">5</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-4 grid__col--no-gutters">
+                    <div class="block block--dark">
+                      <div class="block--dark__content block__content--center">4</div>
+                    </div>
+                  </div>
+                  <div class="grid__col grid__col--sm-3 grid__col--no-gutters">
+                    <div class="block block--dark">
+                      <div class="block--dark__content block__content--center">3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer footer--light">
+      <div class="grid grid--fixed">
+        <div class="footer__body footer--light__body"><a href="http://vivid-websolutions.nl" target="_blank" class="link link--light">Vivid Websolutions</a></div>
+      </div>
+    </footer>
+  </body>
+</html>

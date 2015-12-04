@@ -1,0 +1,44 @@
+// The Grid
+.grid {
+  box-sizing: border-box;
+  overflow: hidden;
+
+  @include variant(fixed) {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  @include variant(flex-cols) {
+    .grid__col {
+      display: flex;
+    }
+  }
+
+  @include has(row) {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: -1rem -.5rem 1rem -.5rem;
+    padding: 0;
+
+    @include variant(no-gutters) {
+      margin: 0;
+    }
+  }
+
+  @include has(col) {
+    box-sizing: border-box;
+    flex: 0 0 100%;
+    padding: 1rem .5rem 0 .5rem;
+
+    @include variant(no-gutters) {
+      padding: 0;
+    }
+  }
+}
+
+@include make-grid($breakpoints, $columns);
