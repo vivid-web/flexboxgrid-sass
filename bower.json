@@ -16,7 +16,8 @@
     "stylus",
     "sass",
     "less",
-    "front-end"
+    "front-end",
+    "BEM"
   ],
   "ignore": [
     "**/.*",

@@ -1,8 +1,5 @@
 .section{
-
-  @include has(header){
-    padding-top: 2rem;
-  }
+  padding: 2rem 0;
 
   @include has(title){
     text-align: center;

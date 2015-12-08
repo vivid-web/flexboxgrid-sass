@@ -1,27 +1,39 @@
-section.section.section--light
-    .grid.grid--fixed
+section.section.section--dark
+    .grid.grid--container
         .grid__row
             .grid__col.grid__col-md-12
-                .section__header.section--light__header
-                    h2.section__title.section--light__title.
+                .section__header.section--dark__header
+                    h2.section__title.section--dark__title.
                         Responsive
-                    span.section__underline.section--light__underline
-                    small.section__subtitle.section--light__subtitle.
+                    span.section__underline.section--dark__underline
+                    small.section__subtitle.section--dark__subtitle.
                         The content can be displayed on multiple devices
-                .section__body.section--light__body
-                    .grid.grid--fixed
-                        .grid__row
-                            .grid__col.grid__col--xs-8
-                                .block.block--light
-                                    .block__content
-                            .grid__col.grid__col--xs-4
-                                .block.block--light
-                                    .block__content
-                    .grid.grid--fixed
-                        .grid__row
-                            .grid__col.grid__col--xs-2.grid__col--md-4.grid__col--lg-9.grid__col--xl-10
-                                .block.block--light
-                                    .block__content
-                            .grid__col.grid__col--xs-10.grid__col--md-8.grid__col--lg-3.grid__col--xl-2
-                                .block.block--light
-                                    .block__content
+                .section__body.section--dark__body
+                    .grid__row
+                        .grid__col.grid__col--xs-8
+                            .block.block--dark
+                                .block__content
+                        .grid__col.grid__col--xs-4
+                            .block.block--dark
+                                .block__content
+                    .grid__row
+                        .grid__col.grid__col--xs-2.grid__col--md-4.grid__col--lg-9.grid__col--xl-10
+                            .block.block--dark
+                                .block__content
+                        .grid__col.grid__col--xs-10.grid__col--md-8.grid__col--lg-3.grid__col--xl-2
+                            .block.block--dark
+                                .block__content
+                    .grid__row
+                        .grid__col
+                            pre.code.code--dark.
+                                &lt;div class=&quot;grid grid--container&quot;&gt;
+                                    &lt;div class=&quot;grid__row&quot;&gt;
+                                        &lt;div class=&quot;grid__col grid__col--xs-2 grid__col--md-4 grid__col--lg-9 grid__col--xl-10&quot;&gt;
+                                            ...
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;grid__col grid__col--xs-10 grid__col--md-8 grid__col--lg-3 grid__col--xl-2&quot;&gt;
+                                            ...
+                                        &lt;/div&gt;
+                                        ...
+                                    &lt;/div&gt;
+                                &lt;/div&gt;

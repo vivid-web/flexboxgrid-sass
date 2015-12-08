@@ -1,0 +1,11 @@
+@function opacity-background($color_1, $color_2, $color_3, $opacity) {
+  @return rgba($color_1, $color_2, $color_3, $opacity)
+}
+
+@function opacity-white($opacity) {
+  @return opacity-background(255, 255, 255, $opacity)
+}
+
+@function opacity-black($opacity) {
+  @return opacity-background(0, 0, 0, $opacity)
+}

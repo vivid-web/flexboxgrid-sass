@@ -3,16 +3,17 @@
   padding: 0.5rem;
   word-wrap: break-word;
   white-space: pre;
+  line-height: 1.5rem;
 
   @include variant(light){
-    background-color: $opacity_black;
-    border: 1px solid $opacity_black;
+    background-color: opacity-black(0.05);
+    border: 1px solid $opacity_black_20;
     color: $primary_black;
   }
 
   @include variant(dark){
-    background-color: $opacity_white;
-    border: 1px solid $opacity_white;
+    background-color: opacity-white(0.05);
+    border: 1px solid $opacity_white_20;
     color: $primary_white;
   }
 }

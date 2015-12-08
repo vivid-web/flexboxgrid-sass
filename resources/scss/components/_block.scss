@@ -23,7 +23,7 @@
   }
 
   @include variant(dark) {
-    background-color: $opacity_white;
+    background-color: $opacity_white_20;
 
     @include has(content) {
       color: $primary_white;
@@ -38,7 +38,7 @@
   }
 
   @include variant(light) {
-    background-color: $opacity_black;
+    background-color: $opacity_black_20;
 
     @include has(content) {
       color: $primary_black;

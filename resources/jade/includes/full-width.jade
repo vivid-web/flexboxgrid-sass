@@ -1,44 +1,38 @@
 section.section.section--light
-    .grid.grid--container
+    .grid
         .grid__row
             .grid__col.grid__col-md-12
                 .section__header.section--light__header
                     h2.section__title.section--light__title.
-                        Reversing the columns
+                        Full width
                     span.section__underline.section--light__underline
                     small.section__subtitle.section--light__subtitle.
-                        It is possible to reverse the columns
+                        It is possible to make the grid full width
                 .section__body.section--light__body
-                    .grid__row.grid__row--sm-reverse
+                    .grid__row
                         .grid__col.grid__col--sm-2
                             .block.block--light
-                                .block__content.block--light__content.block__content--center.
-                                    1
+                                .block__content.block--light__content
                         .grid__col.grid__col--sm-2
                             .block.block--light
-                                .block__content.block--light__content.block__content--center.
-                                    2
+                                .block__content.block--light__content
                         .grid__col.grid__col--sm-2
                             .block.block--light
-                                .block__content.block--light__content.block__content--center.
-                                    3
+                                .block__content.block--light__content
                         .grid__col.grid__col--sm-2
                             .block.block--light
-                                .block__content.block--light__content.block__content--center.
-                                    4
+                                .block__content.block--light__content
                         .grid__col.grid__col--sm-2
                             .block.block--light
-                                .block__content.block--light__content.block__content--center.
-                                    5
-                        .grid__col.grid__col--sm-2
+                                .block__content.block--light__content
+                        .grid__col.grid__col--sm-2.grid__col--sm-first
                             .block.block--light
-                                .block__content.block--light__content.block__content--center.
-                                    6
+                                .block__content.block--light__content
                     .grid__row
                         .grid__col
                             pre.code.code--light.
-                                &lt;div class=&quot;grid grid--container&quot;&gt;
-                                    &lt;div class=&quot;grid__row grid__row--sm-reverse&quot;&gt;
+                                &lt;div class=&quot;grid&quot;&gt;
+                                    &lt;div class=&quot;grid__row&quot;&gt;
                                         &lt;div class=&quot;grid__col grid__col--sm&quot;&gt;
                                             ...
                                         &lt;/div&gt;

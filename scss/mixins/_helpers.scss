@@ -40,6 +40,13 @@
   }
 }
 
+// Helper for making the column flexible
+@mixin make-col-flexible-helper($breakpoint) {
+  .grid__col--#{$breakpoint}-flex {
+    display: flex;
+  }
+}
+
 @mixin make-helpers($breakpoint) {
   @include make-grid-top-helper($breakpoint);
   @include make-grid-center-helper($breakpoint);
@@ -47,4 +54,5 @@
   @include make-first-col-helper($breakpoint);
   @include make-last-col-helper($breakpoint);
   @include make-reverse-helper($breakpoint);
+  @include make-col-flexible-helper($breakpoint);
 }

@@ -12,7 +12,7 @@
   @include variant(primary) {
     background-color: $primary;
     color: $primary_white;
-    border: 1px solid $opacity_black;
+    border: 1px solid $opacity_black_20;
     text-decoration: none;
 
     &:hover {
