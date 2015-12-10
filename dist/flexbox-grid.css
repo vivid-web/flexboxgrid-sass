@@ -5,6 +5,8 @@
     margin: 0 auto;
     max-width: 1200px;
     width: 100%; }
+  .grid--no-gutters {
+    padding: 0; }
   .grid__row {
     box-sizing: border-box;
     display: -webkit-box;
@@ -36,6 +38,7 @@
     -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+    max-width: 100%;
     padding: 1rem .5rem 0 .5rem; }
     .grid__col--no-gutters {
       padding: 0; }
