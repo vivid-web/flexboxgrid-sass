@@ -47,6 +47,18 @@
   }
 }
 
+@mixin make-text-helper($breakpoint) {
+  .grid__text--#{$breakpoint}-right {
+    text-align: right;
+  }
+  .grid__text--#{$breakpoint}-left {
+    text-align: left;
+  }
+  .grid__text--#{$breakpoint}-center {
+    text-align: center;
+  }
+}
+
 @mixin make-helpers($breakpoint) {
   @include make-grid-top-helper($breakpoint);
   @include make-grid-center-helper($breakpoint);
@@ -55,4 +67,5 @@
   @include make-last-col-helper($breakpoint);
   @include make-reverse-helper($breakpoint);
   @include make-col-flexible-helper($breakpoint);
+  @include make-text-helper($breakpoint);
 }

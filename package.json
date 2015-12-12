@@ -2,11 +2,26 @@
   "name": "flexbox-grid-sass",
   "version": "2.1.0",
   "description": "A simple flexbox CSS grid system",
-  "main": "dist/flexbox-grid.min.css",
+  "main": "scss/flexbox-grid.scss",
   "repository": {
     "type": "git",
     "url": "https://github.com/vivid-web/flexbox-grid-sass.git"
   },
+  "keywords": [
+    "vivid",
+    "websolutions",
+    "flexbox",
+    "grid",
+    "sass",
+    "bem",
+    "responsive",
+    "liquid",
+    "css",
+    "framework",
+    "skeleton",
+    "front-end",
+    "frontend"
+  ],
   "author": "Vivid Websolutions <info@vivid-websolutions.nl>",
   "license": "MIT",
   "devDependencies": {

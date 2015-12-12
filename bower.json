@@ -1,23 +1,26 @@
 {
   "name": "flexbox-grid-sass",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "A simple flexbox CSS grid system",
-  "main": "dist/flexbox-grid.min.css",
+  "main": "scss/flexbox-grid.scss",
   "authors": [
     "Vivid Websolutions <info@vivid-websolutions.nl>"
   ],
   "license": "MIT",
   "keywords": [
-    "css",
-    "grid",
+    "vivid",
+    "websolutions",
     "flexbox",
-    "responsive",
-    "framework",
-    "stylus",
+    "grid",
     "sass",
-    "less",
+    "bem",
+    "responsive",
+    "liquid",
+    "css",
+    "framework",
+    "skeleton",
     "front-end",
-    "BEM"
+    "frontend"
   ],
   "ignore": [
     "**/.*",
