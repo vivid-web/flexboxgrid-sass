@@ -6,4 +6,9 @@
 @import "mixins/bem";
 
 // Components
+@import "components/col";
 @import "components/grid";
+@import "components/row";
+@import "components/text";
+
+@include init($breakpoints, $columns);

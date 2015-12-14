@@ -1,18 +1,18 @@
-section.section.section--dark
+section.section.section--light
     .grid.grid--container
         .row
             .col.col--md-12
-                .section__header.section--dark__header
-                    h2.section__title.section--dark__title.
-                        Bottom alignment
-                    span.section__underline.section--dark__underline
-                    small.section__subtitle.section--dark__subtitle.
-                        It is possible to align the columns at the bottom
-                .section__body.section--dark__body
-                    .row.row--sm-bottom
-                        .col.col--sm-4
-                            .block.block--dark
-                                .block__content.block--dark__content
+                .section__header.section--light__header
+                    h2.section__title.section--light__title.
+                        Individual Alignment
+                    span.section__underline.section--light__underline
+                    small.section__subtitle.section--light__subtitle.
+                        It is possible to align the columns individually
+                .section__body.section--light__body
+                    .row
+                        .col.col--sm-4.col--sm-align-top
+                            .block.block--light
+                                .block__content.block--light__content
                                     p.
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                         Ea eligendi illo impedit placeat provident quod ut.
@@ -24,9 +24,19 @@ section.section.section--dark
                                         ipsam libero maiores minima nisi nobis perferendis quasi quis
                                         repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
                                         voluptatem voluptatum?
-                        .col.col--sm-3
-                            .block.block--dark
-                                .block__content.block--dark__content
+                                    p.
+                                        A ad aliquid asperiores aut culpa dicta eaque expedita hic ipsa
+                                        ipsam libero maiores minima nisi nobis perferendis quasi quis
+                                        repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
+                                        voluptatem voluptatum?
+                                    p.
+                                        A ad aliquid asperiores aut culpa dicta eaque expedita hic ipsa
+                                        ipsam libero maiores minima nisi nobis perferendis quasi quis
+                                        repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
+                                        voluptatem voluptatum?
+                        .col.col--sm-3.col--sm-align-center
+                            .block.block--light
+                                .block__content.block--light__content
                                     p.
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                         Ea eligendi illo impedit placeat provident quod ut.
@@ -38,9 +48,9 @@ section.section.section--dark
                                         ipsam libero maiores minima nisi nobis perferendis quasi quis
                                         repudiandae, sint totam voluptatibus. Blanditiis iure natus perferendis
                                         voluptatem voluptatum?
-                        .col.col--sm-5
-                            .block.block--dark
-                                .block__content.block--dark__content
+                        .col.col--sm-5.col--sm-align-bottom
+                            .block.block--light
+                                .block__content.block--light__content
                                     p.
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                         Ea eligendi illo impedit placeat provident quod ut.
@@ -54,16 +64,16 @@ section.section.section--dark
                                         voluptatem voluptatum?
                     .row
                         .col
-                            pre.code.code--dark.
+                            pre.code.code--light.
                                 &lt;div class=&quot;grid grid--container&quot;&gt;
-                                    &lt;div class=&quot;row row--sm-bottom&quot;&gt;
-                                        &lt;div class=&quot;col col--sm&quot;&gt;
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col col--sm col--sm-align-top&quot;&gt;
                                             ...
                                         &lt;/div&gt;
-                                        &lt;div class=&quot;col col--sm&quot;&gt;
+                                        &lt;div class=&quot;col col--sm col--sm-align-middle&quot;&gt;
                                             ...
                                         &lt;/div&gt;
-                                        &lt;div class=&quot;col col--sm&quot;&gt;
+                                        &lt;div class=&quot;col col--sm col--sm-align-bottom&quot;&gt;
                                             ...
                                         &lt;/div&gt;
                                         ...

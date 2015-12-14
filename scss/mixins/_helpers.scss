@@ -1,71 +1,58 @@
 // Helper for the grid align top
-@mixin make-grid-top-helper($breakpoint) {
-  .grid__row--#{$breakpoint}-top {
+@mixin make-row-helpers($breakpoint) {
+  .row--#{$breakpoint}-top {
     align-items: flex-start;
   }
-}
-
-// Helper for the grid align center
-@mixin make-grid-center-helper($breakpoint) {
-  .grid__row--#{$breakpoint}-center {
+  .row--#{$breakpoint}-center {
     align-items: center;
   }
-}
-
-// Helper for the grid align bottom
-@mixin make-grid-bottom-helper($breakpoint) {
-  .grid__row--#{$breakpoint}-bottom {
+  .row--#{$breakpoint}-bottom {
     align-items: flex-end;
   }
-}
-
-// Helper for the sorting the first item
-@mixin make-first-col-helper($breakpoint) {
-  .grid__col--#{$breakpoint}-first {
-    order: -1;
-  }
-}
-
-// Helper for the sorting the first item
-@mixin make-last-col-helper($breakpoint) {
-  .grid__col--#{$breakpoint}-last {
-    order: 1;
-  }
-}
-
-// Helper for the reversing the items
-@mixin make-reverse-helper($breakpoint) {
-  .grid__row--#{$breakpoint}-reverse {
+  .row--#{$breakpoint}-reverse {
     flex-direction: row-reverse;
   }
 }
 
-// Helper for making the column flexible
-@mixin make-col-flexible-helper($breakpoint) {
-  .grid__col--#{$breakpoint}-flex {
+// Helper for the sorting the first item
+@mixin make-col-helpers($breakpoint) {
+  .col--#{$breakpoint}-align-top {
+    align-self: flex-start;
+  }
+  .col--#{$breakpoint}-align-center {
+    align-self: center;
+  }
+  .col--#{$breakpoint}-align-bottom {
+    align-self: flex-end;
+  }
+  .col--#{$breakpoint}-first {
+    order: -1;
+  }
+  .col--#{$breakpoint}-last {
+    order: 1;
+  }
+  .col--#{$breakpoint}-reset {
+    order: 0;
+  }
+  .col--#{$breakpoint}-flex {
     display: flex;
   }
 }
 
-@mixin make-text-helper($breakpoint) {
-  .grid__text--#{$breakpoint}-right {
+@mixin make-text-helpers($breakpoint) {
+  .text--#{$breakpoint}-right {
     text-align: right;
   }
-  .grid__text--#{$breakpoint}-left {
+  .text--#{$breakpoint}-left {
     text-align: left;
   }
-  .grid__text--#{$breakpoint}-center {
+  .text--#{$breakpoint}-center {
     text-align: center;
   }
 }
 
 @mixin make-helpers($breakpoint) {
-  @include make-grid-top-helper($breakpoint);
-  @include make-grid-center-helper($breakpoint);
-  @include make-grid-bottom-helper($breakpoint);
-  @include make-first-col-helper($breakpoint);
-  @include make-last-col-helper($breakpoint);
-  @include make-reverse-helper($breakpoint);
-  @include make-col-flexible-helper($breakpoint);
-  @include make-text-helper($breakpoint);
+  @include make-row-helpers($breakpoint);
+  @include make-col-helpers($breakpoint);
+  @include make-text-helpers($breakpoint);
 }
