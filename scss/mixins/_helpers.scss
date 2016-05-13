@@ -1,52 +1,53 @@
 // Helper for the grid align top
 @mixin make-row-helpers($breakpoint) {
-  .row--#{$breakpoint}-top {
+  .Row--#{$breakpoint}-top {
     align-items: flex-start;
   }
-  .row--#{$breakpoint}-center {
+  .Row--#{$breakpoint}-center {
     align-items: center;
   }
-  .row--#{$breakpoint}-bottom {
+  .Row--#{$breakpoint}-bottom {
     align-items: flex-end;
-  }
-  .row--#{$breakpoint}-reverse {
-    flex-direction: row-reverse;
   }
 }
 
 // Helper for the sorting the first item
 @mixin make-col-helpers($breakpoint) {
-  .col--#{$breakpoint}-align-top {
+  .Col--#{$breakpoint}-align-top {
     align-self: flex-start;
   }
-  .col--#{$breakpoint}-align-center {
+  .Col--#{$breakpoint}-align-center {
     align-self: center;
   }
-  .col--#{$breakpoint}-align-bottom {
+  .Col--#{$breakpoint}-align-bottom {
     align-self: flex-end;
   }
-  .col--#{$breakpoint}-first {
+
+  .Col--#{$breakpoint}-first {
     order: -1;
   }
-  .col--#{$breakpoint}-last {
+  .Col--#{$breakpoint}-last {
     order: 1;
   }
-  .col--#{$breakpoint}-reset {
+  .Col--#{$breakpoint}-reset {
     order: 0;
   }
-  .col--#{$breakpoint}-flex {
+  .Row--#{$breakpoint}-reverse {
+    flex-direction: row-reverse;
+  }
+  .Col--#{$breakpoint}-flex {
     display: flex;
   }
 }
 
 @mixin make-text-helpers($breakpoint) {
-  .text--#{$breakpoint}-right {
+  .Text--#{$breakpoint}-right {
     text-align: right;
   }
-  .text--#{$breakpoint}-left {
+  .Text--#{$breakpoint}-left {
     text-align: left;
   }
-  .text--#{$breakpoint}-center {
+  .Text--#{$breakpoint}-center {
     text-align: center;
   }
 }

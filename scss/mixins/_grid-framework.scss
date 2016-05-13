@@ -26,7 +26,7 @@
 
 @mixin make-grid-column($breakpoint, $columns) {
   @include make-helpers($breakpoint);
-  .col--#{$breakpoint} {
+  .Col--#{$breakpoint} {
     @include make-default();
     @include make-column($columns);
     @include make-offset($columns)

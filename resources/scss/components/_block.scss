@@ -1,4 +1,4 @@
-.block {
+.Block {
   box-sizing: border-box;
   overflow: hidden;
   padding: 1rem;
@@ -32,6 +32,7 @@
 
   @include variant(dark-highlight) {
     background-color: $primary_dark;
+
     @include has(content) {
       color: $primary_white;
     }
@@ -47,6 +48,7 @@
 
   @include variant(light-highlight) {
     background-color: $primary_light;
+
     @include has(content) {
       color: $primary_black;
     }

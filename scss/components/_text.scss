@@ -1,10 +1,12 @@
-.text {
+.Text {
   @include variant(left) {
     text-align: left;
   }
+
   @include variant(center) {
     text-align: center;
   }
+
   @include variant(right) {
     text-align: right;
   }
