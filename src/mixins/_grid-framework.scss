@@ -1,0 +1,46 @@
+@mixin make-default() {
+  & {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    padding: 1rem .5rem 0 .5rem;
+  }
+}
+
+@mixin make-offset($columns) {
+  @for $number from 1 through $columns {
+    &-offset-#{$number} {
+      margin-left: (100 / $columns * $number)#{'%'};
+    }
+  }
+}
+
+@mixin make-column($columns ) {
+  @for $number from 1 through $columns {
+    &-#{$number} {
+      width: (100 / $columns * $number)#{'%'};
+      flex: none;
+    }
+  }
+}
+
+@mixin make-grid-column($breakpoint, $columns) {
+  @include make-helpers($breakpoint);
+  .col--#{$breakpoint} {
+    @include make-default();
+    @include make-column($columns);
+    @include make-offset($columns)
+  }
+}
+
+@mixin init($breakpoints, $columns) {
+  @each $breakpoint, $width in $breakpoints {
+    @if ($width == 0) {
+      @include make-grid-column($breakpoint, $columns);
+    } @else {
+      @media (min-width: $width) {
+        @include make-grid-column($breakpoint, $columns);
+      }
+    }
+  }
+}

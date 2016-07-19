@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+pre {
+  font-family: 'Fira Code', monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-variant-ligatures: contextual;
+}

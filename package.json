@@ -2,7 +2,17 @@
   "name": "flexbox-grid-sass",
   "version": "4.0.0",
   "description": "A simple flexbox CSS grid system",
-  "main": "scss/flexbox-grid.scss",
+  "main": "dist/flexbox-grid.scss",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "gulp",
+    "dist": "gulp build",
+    "docs": "gulp docs",
+    "prepublish": "npm run build"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/vivid-web/flexbox-grid-sass.git"
@@ -24,13 +34,17 @@
   ],
   "author": "Vivid Websolutions <info@vivid-websolutions.nl>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vivid-web/flexbox-grid-sass/issues"
+  },
+  "homepage": "http://flexboxgrid.vivid-websolutions.nl",
   "devDependencies": {
-    "gulp": "^3.8.8",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.11",
     "gulp-jade": "^1.1.0",
-    "gulp-minify-css": "^1.2.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.0",
-    "gulp-sourcemaps": "^1.6.0"
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-sass": "^2.1.0"
   }
 }

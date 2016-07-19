@@ -1,11 +1,11 @@
 {
   "name": "flexbox-grid-sass",
-  "version": "4.0.0",
-  "description": "A simple flexbox CSS grid system",
-  "main": "scss/flexbox-grid.scss",
+  "homepage": "http://flexboxgrid.vivid-websolutions.nl",
   "authors": [
     "Vivid Websolutions <info@vivid-websolutions.nl>"
   ],
+  "description": "A simple flexbox CSS grid system",
+  "main": "dist/flexbox-grid.css",
   "license": "MIT",
   "keywords": [
     "vivid",
@@ -27,6 +27,7 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "docs"
   ]
 }

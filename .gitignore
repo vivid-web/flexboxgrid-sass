@@ -1,2 +1,6 @@
 /node_modules
-.idea
+/.idea
+npm-debug.log
+dist/flexbox-grid.css.map
+dist/flexbox-grid.min.css.map
+assets/scss/_variables.scss
