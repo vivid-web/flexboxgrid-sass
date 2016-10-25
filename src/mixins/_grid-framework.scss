@@ -3,7 +3,7 @@
     flex-grow: 1;
     flex-basis: 0;
     max-width: 100%;
-    padding: 1rem .5rem 0 .5rem;
+    padding: 1rem ($gutter-width / 2) 0;
   }
 }
 
