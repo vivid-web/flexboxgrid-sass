@@ -1,6 +1,6 @@
 .grid {
   box-sizing: border-box;
-  padding: 0 .5rem;
+  padding: 0 ($gutter-width / 2);
 
   @include variant(container) {
     margin: 0 auto;

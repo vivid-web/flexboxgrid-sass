@@ -2,7 +2,7 @@
   box-sizing: border-box;
   flex: 0 0 100%;
   max-width: 100%;
-  padding: 1rem .5rem 0 .5rem;
+  padding: 1rem ($gutter-width / 2) 0;
 
   @include variant(no-gutters) {
     padding: 0;
