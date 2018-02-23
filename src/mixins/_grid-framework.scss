@@ -10,7 +10,7 @@
 @mixin make-offset($columns) {
   @for $number from 1 through $columns {
     &-offset-#{$number} {
-      margin-left: (100 / $columns * $number)#{'%'};
+      margin-left: unquote('#{100 / $columns * $number}"%"');
     }
   }
 }
@@ -18,7 +18,7 @@
 @mixin make-column($columns ) {
   @for $number from 1 through $columns {
     &-#{$number} {
-      width: (100 / $columns * $number)#{'%'};
+      width: unquote('#{100 / $columns * $number}"%"');
       flex: none;
     }
   }
