@@ -44,6 +44,7 @@
   .col {
     @include variant($breakpoint + '-' + $column) {
       flex: 0 0 ($width);
+      max-width: ($width);
     }
   }
 }

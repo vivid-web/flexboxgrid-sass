@@ -1,12 +1,12 @@
 // Variables
 @import './_variables.scss';
 
-// Functions
-@import './functions/_bem.scss';
-@import './functions/_col.scss';
-@import './functions/_grid.scss';
-@import './functions/_row.scss';
-@import './functions/_text.scss';
+// Mixins
+@import './mixins/_bem.scss';
+@import './mixins/_col.scss';
+@import './mixins/_grid.scss';
+@import './mixins/_row.scss';
+@import './mixins/_text.scss';
 
 // Components
 @import './components/_grid.scss';
