@@ -1,30 +1,40 @@
-# Flexbox Grid Sass #
-Flexbox Grid is a modern 12-col grid system based on Bootstrap.
-It is written in Sass, a robust css preprocessor.
+# Flexboxgrid SASS #
+Flexboxgrid is a modern 12-col grid system based on Bootstrap.
+It is written in Sass, a flexible and robust css preprocessor.
 
-The Flexbox Grid is written according the [BEM](http://getbem.com/) methodology
+The Flexboxgrid is written according the [BEM](http://getbem.com/) methodology
 
 For more information, visit [flexboxgrid.vivid-websolutions.nl](http://flexboxgrid.vivid-websolutions.nl)
 
 ## Table of contents ##
- - [Installation](#installation)
-    -  [Bower](#bower)
-    -  [NPM](#npm)
+ - [Getting started](#getting-started)
+    -  [Installation](#installation)
+    -  [Configuration](#configuration)
  - [Authors](#authors)
  - [More Information](#more-information)
  - [License](#license)
 
-## Installation ##
-To install Flexbox Grid Sass, use one of the following methods.
+## Getting started ##
+In this paragraph we will discuss how to install and configure this project.
 
-### Bower ###
+### Installation ###
+To install Flexboxgrid SASS, use one of the following methods.
 ```bash
-$ bower install flexbox-grid-sass
+$ npm install @vivid-web/flexboxgrid-sass --save
+
+# or yarn
+$ yarn add @vivid-web/flexboxgrid-sass
 ```
 
-### NPM ###
-```bash
-$ npm install flexbox-grid-sass
+### Configuration ###
+To add Flexboxgrid Vue to your project, you can load it in using JavaScript:
+```javascript
+import '@vivid-web/flexboxgrid-sass';
+```
+
+Or you can load it in using SASS.
+```sass
+@import "~@vivid-web/flexboxgrid-sass"
 ```
 
 ## Authors ##
@@ -36,7 +46,7 @@ $ npm install flexbox-grid-sass
 ## License ##
 The MIT License (MIT)
 
-Copyright (c) 2015 Vivid Websolutions
+Copyright (c) 2015 - 2018 Vivid Websolutions
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
