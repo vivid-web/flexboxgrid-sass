@@ -1,3 +1,5 @@
+@import '../bootstrap.scss';
+
 .row {
   box-sizing: border-box;
   display: flex;
@@ -12,7 +14,25 @@
     margin-bottom: 0;
   }
 
-  @include variant(no-gutters) {
+  @include variant('no-gutters') {
     margin: 0;
   }
+
+  @include variant('top') {
+    align-items: flex-start;
+  }
+
+  @include variant('center') {
+    align-items: center;
+  }
+
+  @include variant('bottom') {
+    align-items: flex-end;
+  }
+
+  @include variant('reverse') {
+    flex-direction: row-reverse;
+  }
 }
+
+@include make-rows($breakpoints);

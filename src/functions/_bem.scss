@@ -1,9 +1,11 @@
+// An block has an element.
 @mixin has($element) {
   &__#{$element} {
     @content;
   }
 }
 
+// An element has a variant.
 @mixin variant($modifier) {
   &--#{$modifier} {
     @content;

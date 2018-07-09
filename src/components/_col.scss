@@ -1,10 +1,44 @@
+@import '../bootstrap.scss';
+
 .col {
   box-sizing: border-box;
+  display: flex;
   flex: 0 0 100%;
+  flex-direction: column;
   max-width: 100%;
   padding: 1rem .5rem 0 .5rem;
 
-  @include variant(no-gutters) {
+  @include variant('no-gutters') {
     padding: 0;
   }
+
+  @include variant('align-top') {
+    align-self: flex-start;
+  }
+
+  @include variant('align-center') {
+    align-self: center;
+  }
+
+  @include variant('align-bottom') {
+    align-self: flex-end;
+  }
+
+  @include variant('first') {
+    order: -1;
+  }
+
+  @include variant('last') {
+    order: 1;
+  }
+
+  @include variant('reset') {
+    order: 0;
+  }
+
+  @include variant('flex') {
+    display: flex;
+  }
 }
+
+@include make-columns($breakpoints, $columns);

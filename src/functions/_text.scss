@@ -1,0 +1,29 @@
+// Will make a single text item.
+@mixin make-single-text($breakpoint) {
+  .text {
+    @include variant($breakpoint + '-right') {
+      text-align: right;
+    }
+
+    @include variant($breakpoint + '-left') {
+      text-align: left;
+    }
+
+    @include variant($breakpoint + '-center') {
+      text-align: center;
+    }
+  }
+}
+
+// Will make the text.
+@mixin make-text($breakpoints) {
+  @each $breakpoint, $width in $breakpoints {
+    @if ($width == 0) {
+      @include make-single-text($breakpoint);
+    } @else {
+      @media (min-width: $width) {
+        @include make-single-text($breakpoint);
+      }
+    }
+  }
+}
