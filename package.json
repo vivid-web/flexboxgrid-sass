@@ -2,7 +2,7 @@
   "name": "@vivid-web/flexboxgrid-sass",
   "version": "5.0.0",
   "description": "A simple flexbox CSS grid system",
-  "main": "dist/flexboxgrid.scss",
+  "main": "dist/flexboxgrid.css",
   "publishConfig": {
     "access": "public"
   },
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vivid-web/flexbox-grid-sass.git"
+    "url": "https://github.com/vivid-web/flexboxgrid-sass.git"
   },
   "keywords": [
     "vivid",
