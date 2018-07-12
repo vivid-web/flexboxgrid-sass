@@ -6,7 +6,7 @@
   flex: 0 0 100%;
   flex-direction: column;
   max-width: 100%;
-  padding: 1rem .5rem 0 .5rem;
+  padding: map_get($gutter, 'height') (map_get($gutter, 'width') / 2) 0;
 
   @include variant('no-gutters') {
     padding: 0;

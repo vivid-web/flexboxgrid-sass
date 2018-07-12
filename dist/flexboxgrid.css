@@ -8,7 +8,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0 .5rem; }
+  padding: 0 0.5rem; }
   .grid--container {
     margin: 0 auto;
     max-width: 1200px;
@@ -51,7 +51,7 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
-  margin: -1rem -.5rem 1rem -.5rem;
+  margin: -1rem -1.5rem;
   padding: 0; }
   .row:last-child {
     margin-bottom: 0; }
@@ -197,7 +197,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   max-width: 100%;
-  padding: 1rem .5rem 0 .5rem; }
+  padding: 1rem 0.5rem 0; }
   .col--no-gutters {
     padding: 0; }
   .col--align-top {

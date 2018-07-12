@@ -4,7 +4,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 0 .5rem;
+  padding: 0 (map_get($gutter, 'width') / 2);
 
   @include variant('container') {
     margin: 0 auto;

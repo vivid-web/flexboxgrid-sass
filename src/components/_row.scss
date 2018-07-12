@@ -7,7 +7,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
-  margin: -1rem -.5rem 1rem -.5rem;
+  margin: (-(map_get($gutter, 'height'))) (-(map_get($gutter, 'width') / 2)) -(map_get($gutter, 'height'));
   padding: 0;
 
   &:last-child {

@@ -1,7 +1,7 @@
-// Variables
-@import './_variables.scss';
+// Import all the settings.
+@import './settings/_variables.scss';
 
-// Mixins
+// Import all the mixins.
 @import './mixins/_bem.scss';
 @import './mixins/_col.scss';
 @import './mixins/_grid.scss';
