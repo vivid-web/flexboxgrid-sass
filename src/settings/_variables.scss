@@ -1,0 +1,17 @@
+// The amount of columns to be rendered.
+$columns: 12 !default;
+
+// The breakpoints.
+$breakpoints: (
+  xs : 0,
+  sm : 544px,
+  md : 768px,
+  lg : 992px,
+  xl : 1200px
+) !default;
+
+// The sizing of the gutter.
+$gutter : (
+  height: 1rem,
+  width: 1rem
+) !default;

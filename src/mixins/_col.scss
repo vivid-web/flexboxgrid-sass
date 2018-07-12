@@ -55,7 +55,7 @@
     $width: 0;
 
     @if ($column != 0) {
-      $width: 100 / $columns * $column#{'%'};
+      $width: percentage(1 / $columns * $column);
     }
 
     @include make-responsive-column($breakpoint, $column, $width);
@@ -77,7 +77,7 @@
     $offset: 0;
 
     @if ($column != 0) {
-      $offset: 100 / $columns * $column#{'%'};
+      $offset: percentage(1 / $columns * $column);
     }
 
     @include make-offset-column($breakpoint, $column, $offset);
