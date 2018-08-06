@@ -51,7 +51,7 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
-  margin: -1rem -1.5rem;
+  margin: -1rem -0.5rem 1rem;
   padding: 0; }
   .row:last-child {
     margin-bottom: 0; }
