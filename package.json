@@ -1,6 +1,6 @@
 {
   "name": "@vivid-web/flexboxgrid-sass",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "description": "A simple flexbox CSS grid system",
   "main": "dist/flexboxgrid.css",
   "publishConfig": {
