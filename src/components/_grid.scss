@@ -8,7 +8,7 @@
 
   @include variant('container') {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: $max-width;
     width: 100%;
   }
 
